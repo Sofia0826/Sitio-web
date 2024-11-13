@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Moneda</title>
+    <link rel="stylesheet" href="/css/dolares.css">
+</head>
+<body>
+    <h2>Convertidor de Dólares a Otra Moneda</h2>
+    <form id="currencyConverterForm">
+        <label for="amount">Monto en dólares (USD):</label>
+        <input type="number" id="amount" placeholder="Ejemplo: 100" required>
+
+        <label for="currency">Selecciona la moneda de destino:</label>
+        <select id="currency">
+            <option value="eur">Euros (EUR)</option>
+            <option value="mxn">Pesos Mexicanos (MXN)</option>
+        </select>
+
+        <button type="button" onclick="convertCurrency()">Convertir</button>
+    </form>
+    <p id="conversionResult"></p>
+
+    <script src="/js/dolares.js"></script>
+</body>
+</html>
